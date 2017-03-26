@@ -1,11 +1,12 @@
-# iterative implementation of nth fibionachi numbers
+# recursive implementation of nth fibionachi numbers
 def fib(n):
-    a, b = 0, 1
-    for i in range(0, n):
-        a, b = b, a + b
-    return a
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return fib(n-1)+fib(n-2)
 
 
 # print first 10 fibionachi numbers
 for i in range(1,10):
 	print fib(i);
+
+
