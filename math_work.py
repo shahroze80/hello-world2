@@ -5,11 +5,6 @@ def fib(n):
     else: return fib(n-1)+fib(n-2)
 
 
-# print first 10 fibionachi numbers
-for i in range(1,10):
-	print fib(i);
-
-
 
 def sum_digits(n):
     s = 0
